@@ -2,6 +2,10 @@
 title: Python
 nav_order: 4
 ---
+
+# Python
+---
+
 1. TOC
 {:toc}
 
@@ -20,7 +24,7 @@ nodes = [c for c in hou.node('/obj').children() if 'myfilter' in c.name()]
 ```
 
 Replace multiple substrings:
-```Python
+```python
 # Dict of replacements:
 replacements = {'original' : 'replacewith', '|' : '/'}
 # loop over each replacement pair and replace sequentially:
