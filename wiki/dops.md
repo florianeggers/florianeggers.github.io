@@ -3,7 +3,7 @@ title: DOPs
 nav_order: 2
 ---
 
-# Navigation Structure
+# DOPs
 {: .no_toc }
 
 ## Table of contents

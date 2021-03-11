@@ -3,7 +3,7 @@ title: Python
 nav_order: 4
 ---
 
-# Navigation Structure
+# Python
 {: .no_toc }
 
 ## Table of contents
@@ -15,6 +15,7 @@ nav_order: 4
 ## Syntax Reminder
 HDA stuff:
 ```python
+# test
 hou.phm().myFunction()  # Call python module functions with a button
 hou.pwd()               # Get this Python module's parent (?)
 kwargs["node"]          # reference to the current node. Same as hou.node('.') ?

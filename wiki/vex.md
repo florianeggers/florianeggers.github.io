@@ -2,7 +2,8 @@
 title: VEX
 nav_order: 3
 ---
-# Navigation Structure
+
+# VEX
 {: .no_toc }
 
 ## Table of contents

@@ -3,7 +3,7 @@ title: Misc
 nav_order: 5
 ---
 
-# Navigation Structure
+# Misc
 {: .no_toc }
 
 ## Table of contents

@@ -3,7 +3,7 @@ title: SOPs
 nav_order: 1
 ---
 
-# Navigation Structure
+# SOPs
 {: .no_toc }
 
 ## Table of contents
