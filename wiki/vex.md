@@ -1,6 +1,9 @@
 ---
 title: VEX
+nav_order: 3
 ---
+1. TOC
+{:toc}
 
 ## Channels and Attribs
 ```
@@ -14,7 +17,7 @@ matrix4 = ch4('Matrix4') = 4@matrix;
 Declaring an array **without** variables:
 ```
 int myArray[] = {1, 2, 55};
-vector myArray[] = set{1, 5, 3}, {4.6, 66.6, -63.});
+vector myArray[] = set({1, 5, 3}, {4.6, 66.6, -63.}); // using set() to keep the website from crashing lol
 ```
 When declaring an array **with** variables, need to use ```array()```
 ```
