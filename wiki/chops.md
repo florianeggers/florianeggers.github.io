@@ -4,7 +4,7 @@ nav_order: 3
 parent: Houdini
 ---
 
-# ~Black Magic~ CHOPs
+# CHOPs
 {: .no_toc }
 
 ## Table of contents
@@ -15,7 +15,7 @@ parent: Houdini
 
 ## Smooth particle jitter
 Smooth high frequency movement postsim. Also useful for RBDs.
-Note: Plugging in the filecache directly lead to Houdini crashing, creating tmp points solved the issue.
+Note: Plugging in the filecache directly lead to Houdini crashing, creating tmp points solved the issue. Also, make sure you set the geo In and Out to *animated*
 ![SOP setup](./images/chops/smoothing_highfreq_01a.png "SOP setup")
 
 VEX Wrangle:

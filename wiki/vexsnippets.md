@@ -14,7 +14,7 @@ parent: Houdini
 {:toc}
 
 ## VEX equivalents for SOPs
-###### Carve / Cut poly line
+##### Carve / Cut poly line
 ```
   // Need to measure perimeter before this wrangle
   import <groom.h>
@@ -22,7 +22,7 @@ parent: Houdini
   adjustPrimLength(0, i@primnum, f@perimeter, f@perimeter * cut);
 ```
 
-###### Polywire
+##### Polywire
 ```
   // Needs:
   //  v@tangent
