@@ -14,7 +14,7 @@ parent: Houdini
 {:toc}
 
 ## Shelf tools
-##### Fetch OUT Nodes
+### Fetch OUT Nodes
 Lets the user choose one or more OUT Nulls to be imported into the current subnet via an object merge. The OUT nodes need to be nulls and follow the "OUT_" naming convention.
 ```python
 # Tested in h18
