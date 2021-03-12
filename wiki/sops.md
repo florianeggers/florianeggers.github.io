@@ -38,4 +38,4 @@ i@id = @ptnum;
 ## UVs
 Uniform UVs for fractured pieces.
 
-![UVs for fractured pieces](./images/sops/fractured_uvs_01.png "UVs for fractured pieces")
+![UVs for fractured pieces](./images/sops/fractured_uvs_01.PNG "UVs for fractured pieces")

@@ -15,10 +15,9 @@ parent: Houdini
 
 ## Shelf tools
 ##### Fetch OUT Nodes
-h18
-{: .label .label-green }
 Lets the user choose one or more OUT Nulls to be imported into the current subnet via an object merge. The OUT nodes need to be nulls and follow the "OUT_" naming convention.
 ```python
+# Tested in h18
 new = []
 try:
     parent = hou.node(hou.ui.paneTabOfType(hou.paneTabType.NetworkEditor).pwd().path())

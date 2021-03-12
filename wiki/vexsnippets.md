@@ -16,7 +16,7 @@ parent: Houdini
 ## VEX equivalents for SOPs
 ###### Carve / Cut poly line
 ```
-  // Need to measure perimeter
+  // Need to measure perimeter before this wrangle
   import <groom.h>
   float cut = 0.5 // Where to cut along the line
   adjustPrimLength(0, i@primnum, f@perimeter, f@perimeter * cut);
@@ -27,6 +27,7 @@ parent: Houdini
   // Needs:
   //  v@tangent
   //  v@bitangent
+  // Can use polyframe to generate those
 
   int npts = npoints(0);
   int segments = chi('Segments');

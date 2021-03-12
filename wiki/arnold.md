@@ -14,6 +14,7 @@ nav_order: 2
 
 ## Override Materials
 Overiding materials on a ROP basis using *Assign Material*
+
 ![Assign Material](./images/arnold/mat_override_01.png "Assign Material")
 
 ## Volume Displacement
