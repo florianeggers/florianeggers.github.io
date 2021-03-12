@@ -3,17 +3,17 @@
 //
 
 $body-background-color: #303030;
-$sidebar-color: #303030;
+$sidebar-color: #292929;
 //$search-background-color: $white !default;
 //$table-background-color: $white !default;
 $code-background-color:  #404040;
-$feedback-color: darken($sidebar-color, 3%);
+$feedback-color: darken($sidebar-color, 2%);
 
-$body-text-color: #f2f2f2;
-$body-heading-color: #f2f2f2;
+$body-text-color: #cccccc;
+$body-heading-color: #f0f0f0;
 //$search-result-preview-color: $grey-dk-000 !default;
-$nav-child-link-color: #f2f2f2;
-$link-color: $blue-000;
+$nav-child-link-color: #cccccc;
+$link-color: #6699cc;
 //$btn-primary-color: $blue-100 !default;
 //$base-button-color: #f7f7f7 !default;
 
@@ -23,4 +23,4 @@ $link-color: $blue-000;
 
 //$border: 1px solid !default;
 //$border-radius: 4px !default;
-$border-color: #202020;
+$border-color: #292929;
