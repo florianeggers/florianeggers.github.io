@@ -16,14 +16,13 @@ parent: Houdini
 ## Syntax Reminder
 HDA stuff:
 ```python
-# test
 hou.phm().myFunction()  # Call python module functions with a button
 hou.pwd()               # Get this Python module's parent (?)
 kwargs["node"]          # reference to the current node. Same as hou.node('.') ?
 kwargs["node"].hdaModule().myFunction() # Call function in Python Module from other places (such as OnLoaded)
 ```
 
-Combining if an for loops to populate a list in one line.
+Combining *if* and *for* loops to populate a list in one line.
 ```python
 nodes = [c for c in hou.node('/obj').children() if 'myfilter' in c.name()]
 ```
@@ -60,7 +59,7 @@ Now, if your HDA does not have any inputs, the ```kwargs['inputindex'] = 0``` wi
 This can be fixed by first referencing the actual GroupSOP instead of the HDA:
 ```python
 import soputils;
-path = kwargs['node'].path()+'/myGroupSOP' # myGroupSop being the node the selection takes place
+path = kwargs['node'].path()+'/myGroupSOP' # myGroupSop being the node the selection takes place on
 kwargs['node'] = hou.node(path)
 kwargs['geometrytype'] = kwargs['node'].parmTuple('grouptype')
 kwargs['inputindex'] = 0
