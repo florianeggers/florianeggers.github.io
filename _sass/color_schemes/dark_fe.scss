@@ -2,17 +2,25 @@
 // Colors
 //
 
-$body-background-color: $grey-dk-200;
-$sidebar-color: $grey-dk-250;
+$body-background-color: #303030;
+$sidebar-color: #303030;
 //$search-background-color: $white !default;
 //$table-background-color: $white !default;
-$code-background-color: $grey-dk-000;
-//$feedback-color: darken($sidebar-color, 3%) !default;
+$code-background-color:  #404040;
+$feedback-color: darken($sidebar-color, 3%);
 
-$body-text-color: $grey-lt-100;
-$body-heading-color:$grey-lt-100 ;
+$body-text-color: #f2f2f2;
+$body-heading-color: #f2f2f2;
 //$search-result-preview-color: $grey-dk-000 !default;
-//$nav-child-link-color: $grey-lt-100 !default;
+$nav-child-link-color: #f2f2f2;
 $link-color: $blue-000;
 //$btn-primary-color: $blue-100 !default;
 //$base-button-color: #f7f7f7 !default;
+
+//
+// Borders
+//
+
+//$border: 1px solid !default;
+//$border-radius: 4px !default;
+$border-color: #202020;
