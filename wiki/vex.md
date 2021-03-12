@@ -1,6 +1,7 @@
 ---
 title: VEX
 nav_order: 3
+parent: Houdini
 ---
 
 # VEX

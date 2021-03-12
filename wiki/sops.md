@@ -1,6 +1,7 @@
 ---
 title: SOPs
 nav_order: 1
+parent: Houdini
 ---
 
 # SOPs
