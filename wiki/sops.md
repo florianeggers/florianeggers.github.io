@@ -14,10 +14,10 @@ parent: Houdini
 {:toc}
 
 ## Curves and Polypath reminders
-* Convert Line - Split single polyline into segments
-* Polypath - Reverse of Convert Line
-* Resample - Aside from resampling, can calculate curveu
-* Ends - set u to unroll to keep edges
+* **Convert Line** - Split single polyline into segments
+* **Polypath** - Reverse of Convert Line
+* **Resample** - Aside from resampling, can calculate curveu
+* **Ends** - set u to unroll to keep edges
 
 
 ## Geometry based MB
@@ -39,3 +39,8 @@ i@id = @ptnum;
 Uniform UVs for fractured pieces.
 
 ![UVs for fractured pieces](./images/sops/fractured_uvs_01.PNG "UVs for fractured pieces")
+
+## Compiled Blocks
+Quick reminders on how these yellow boys work. Compiled Blocks can be invoked by simply **matching the Input names**:
+
+![Invoking compiled blocks](./images/sops/compiled_01.png "Invoking compiled blocks")
