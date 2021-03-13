@@ -20,10 +20,20 @@ To do
 To do
 M
 ## Magical
-To do
+### Lightning bolts
+Procedural lightning bolts. Pretty stylised animation.
+
+[download](./samplefiles/magical/template_lightning_v001.hip){: .btn .btn-outline }
 
 ## Pyro & Volumetrics
 ### Clouds
-Procedural Cumulus & Fractus Clouds
+Procedural cumulus & fractus clouds. Based on simple input geo.
 
 [download](./samplefiles/volume/template_clouds_v001.hip){: .btn .btn-outline }
+
+## Water
+### Rain ripples (Mantra rendertime)
+Mantra shader based rendertime ripples on a plane. Useful for BG rain on a water surface.
+Uses a simple POP sim to generate impacts, then uses on pcopen + sine in shader.
+
+[download](./samplefiles/water/template_rendertime_ripples_v001.hip){: .btn .btn-outline }
