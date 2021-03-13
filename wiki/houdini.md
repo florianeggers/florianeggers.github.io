@@ -5,6 +5,3 @@ has_children: true
 ---
 
 # Houdini
-
-## TODO
-- [x] CHOPS smoothing duplicate points
