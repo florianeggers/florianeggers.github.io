@@ -14,10 +14,4 @@ I have ~5 years of experience working in FX and specialise in FX-tooldev, destru
 
 Have a look at my [Reel](https://vimeo.com/451990883) and [Vimeo](https://vimeo.com/florianeggers) pages to see some of my work. You can also find me on [LinkedIn](https://www.linkedin.com/in/florianeggers/) see my photography endeavours on [Instagram](https://www.instagram.com/florian_eggers/).
 
-![Reel](./images/reel.svg "Reel")
-
-![Vimeo](./images/vimeo.svg "Vimeo")
-{: .p-4 }
-![LinkedIn](./images/linkedin.svg "Vimeo")
-
 If you want to contact me, the best way is probably via LinkedIn for the time being.
