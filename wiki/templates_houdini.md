@@ -24,6 +24,7 @@ M
 Procedural lightning bolts. Pretty stylised animation.
 
 [download](./samplefiles/magical/template_lightning_v001.hip){: .btn .btn-outline }
+[preview](./samplefiles/previews/lightning_v001.mp4){: .btn .btn-outline }
 
 ## Pyro & Volumetrics
 ### Clouds
