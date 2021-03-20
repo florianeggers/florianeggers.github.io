@@ -15,14 +15,21 @@ parent: Houdini
 
 ## VEX equivalents for SOPs
 ### Carve / Cut poly line
+<details>
+<Summary markdown="span">Show VEX code</summary>
+
 ```
   // Need to measure perimeter before this wrangle
   import <groom.h>
   float cut = 0.5 // Where to cut along the line
   adjustPrimLength(0, i@primnum, f@perimeter, f@perimeter * cut);
 ```
+</details>
 
 ### Polywire
+<details>
+<Summary markdown="span">Show VEX code</summary>
+
 ```
   // Needs:
   //  v@tangent
@@ -83,9 +90,13 @@ parent: Houdini
   addprim(0, "poly", end1);
   addprim(0, "poly", end2);
 ```
+</details>
 
 ## Camera Culling
 Simple camera culling through ```i@cull``` attribute. Works on prims or points.
+<details>
+<Summary markdown="span">Show VEX code</summary>
+
 ```
   vector2 padding = chu('Pading'); // Default could be {0.1, 0.1}
   vector2 zcull = chu('ZCull'); // Default could be {0.1, 99}
@@ -97,9 +108,13 @@ Simple camera culling through ```i@cull``` attribute. Works on prims or points.
       i@cull = 1;
   }
 ```
+</details>
 
 ## Removing NaNs
 Remove NAN primitives by looping over every point and checking the```@P``` attribute for a NAN value.
+<details>
+<Summary markdown="span">Show VEX code</summary>
+
 ```
   //PrimitiveWrangle
   int cull_prim = 0;
@@ -121,3 +136,4 @@ Remove NAN primitives by looping over every point and checking the```@P``` attri
   if (cull_prim)
     removeprim(0, @primnum, 1);
 ```
+</details>
