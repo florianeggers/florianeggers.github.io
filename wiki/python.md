@@ -78,3 +78,20 @@ jsf = hou.pwd().parm('jsonfile').eval() #get json file path from parameter
             myList.append(d['jsonDataEntryName'])
             surnames.append(d['surname'])
 ```
+
+## Viewport & Flipbooks
+Came across the issue of wanting to flipbook a sequence of multiple ABC cameras. The Switcher OBJ doesn't work in that case, so here's some python magic to do it as a shelf tool.
+
+Setting a viewport camera:
+```python
+myCamera = hou.node("pathToMyCamera/cam")
+hou.ui.paneTabOfType(hou.paneTabType.SceneViewer).curViewport().setCamera(myCamera)
+```
+
+Set up and run flipbooks:
+```python
+mySceneViewer = hou.ui.paneTabOfType(hou.paneTabType.SceneViewer)         # Get the scene viewer
+myFlipbookSettings = mySceneViewer.flipbookSettings().stash()             # make a copy of the flipbook settings
+myFlipbookSettings.frameRange((1001, 1200))                               # change flipbook settings
+mySceneViewer.flipbook(mySceneViewer.curViewport(), myFlipbookSettings)   # run flipbook
+```
