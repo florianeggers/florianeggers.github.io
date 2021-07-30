@@ -12,11 +12,15 @@ nav_order: 4
 - [Igor Zanic Adaptive FLIP](http://www.igorfx.com/hou_adaptive_flip/)
 - [VEX Cheat Sheet](https://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html)
 
-## Textures, shaders, etc.
+## Lighting, Shading, Lookdev & Rendering
+- [CG Cinematography](https://chrisbrejon.com/cg-cinematography/)
 - [Lee Griggs' Arnold Blog](https://arnold-rendering.com/)
+
+## Textures, etc.
 - [Vector Icons](https://iconmonstr.com/)
 - [Textures (Texture.ninja)](https://texture.ninja/)
 - [Textures (Textures.com)](https://www.textures.com/)
+- [Materials (ambientCG)](https://ambientcg.com/))
 
 ## Animation
 - [Mocap Library (CMU)](http://mocap.cs.cmu.edu/)
@@ -29,3 +33,7 @@ nav_order: 4
 ## Misc
 - [IOR Index)](https://refractiveindex.info/)
 - [Focal Length / Lens Calculator](https://www.digified.net/focallength/)
+
+## Tools
+- [DJV Viewer](https://darbyjohnston.github.io/DJV/)
+- [SpaceSniffer (small tool to check storage usage)](http://www.uderzo.it/main_products/space_sniffer/download.html)

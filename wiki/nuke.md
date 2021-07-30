@@ -20,16 +20,21 @@ MyNode.color  = Reference to the color field of "MyNode"
 root.name     = Filename
 date %x       = Date dd/mm/yy
 ```
-When in a text field, use ```[value myExpression]``` format.
+When in a text field, use ```[value myExpression]``` format. For filepaths use ```[filename myNodeName]```
+
 For custom Gizmos, use ```parent.knobName``` to reference top level user knobs.
 So, for instance, displaying a gizmo level input (called *burnin_comment* in this example) in a text node:
 ```
 comment: [value parent.burnin_comment]
 ```
 
-## Random tricks
+## Random comp tricks
 ### Sharpening
 When sharpening something, use *lin2log* -> *sharpen* -> *log2lin*. Helps with artefacts.
 
 ### Blurring Edges
 todo
+
+## Misc
+### UI
+ - Alt + H hides all node inputs (unless selected)
