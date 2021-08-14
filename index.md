@@ -5,7 +5,7 @@ nav_exclude: true
 
 
 ## Hey Hey people!
-Welcome to this small wiki. It hosts anything from syntax reminders and code snippets to workflows and template files. It's mostly meant for my own personal use, so the selection of content might seem a bit messy at times :)
+Welcome to this small wiki. It hosts anything from syntax reminders and code snippets to workflows and template files. It's mostly meant for my own personal use, so the selection of content might seem a bit random at times :)
 
 ### Who am I?
 My name's Florian and I'm an FX TD currently living and working in London. I consider myself a pretty technical person, love tinkering with setups and tools and like to cause all kinds of mayhem for film and TV (and the occasional animated project).
