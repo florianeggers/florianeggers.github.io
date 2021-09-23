@@ -98,6 +98,82 @@ Simple camera culling through ```i@cull``` attribute. Works on prims or points.
   }
 ```
 
+## VEX skinning
+~~Shitty~~ Simple skinning setup. Used to replace the wire-capture & deformer as it caused problems on a shot.
+Has two components, a weight-capture wrangle and a skin-deform wrangle. Needs ```v@N``` and ```v@up``` on the guide/rest geo.
+
+![Setup](./images/vex/vex_skinning_01.png "Setup")
+
+Wrangles:
+```
+// SKIN CAPTURE
+
+int maxbones = chi("maxbones");
+float maxdist = chf("maxdist");
+
+float weights[], nweights[];
+float sum;
+
+i[]@bones = nearpoints(1, @P, 1, maxbones);
+
+for(int i = 0; i < len(@bones); i++){
+    vector bP = point(1, "P", @bones[i]);
+    float dist = maxdist - distance(@P, bP);
+    push(weights, dist);
+}
+
+// fit to max dist
+foreach(float weight; weights){
+    float x = fit(weight, 0, maxdist, 0, 1);
+    push(nweights, x);
+}
+
+// normalize weights
+weights = {};
+sum = sum(nweights);
+
+foreach(float weight; nweights){
+    float x = weight / sum;
+    push(weights, x);
+}
+
+// assign to attrib
+f[]@weights = weights;
+```
+
+```
+// SKIN DEFORM
+
+int bones[] = i[]@bones;
+vector positions[];
+
+for(int i = 0; i < len(bones); i++){
+    int bone = bones[i];
+    vector restN, deformN;
+    vector restUp, deformUp;
+    vector restP, deformP;
+
+    restN = point(1, "N", bone);
+    deformN = point(2, "N", bone);
+    restP = point(1, "P", bone);
+
+    restUp = point(1, "up", bone);
+    deformUp = point(2, "up", bone);
+    deformP = point(2, "P", bone);
+
+    matrix deformM = maketransform(deformN, deformUp, deformP);
+    matrix restM = maketransform(restN, restUp, restP);
+    premul(deformM, invert(restM));
+
+    push(positions, (@P * deformM) * f[]@weights[i]);
+}
+
+@P = sum(positions);
+
+// Adding a deltamush SOP after helps a lot in some cases
+```
+
+
 ## Removing NaNs
 Remove NAN primitives by looping over every point and checking the```@P``` attribute for a NAN value.
 ```
