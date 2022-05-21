@@ -46,7 +46,7 @@ but before any global transforms.
 ● "world": The global coordinate space of the geometry, after local deformations and global
 transforms have been applied.
 
-## Krama broken DCM exrs
+## Karma broken DCM exrs
 When rendering deep from camera, the alpha of the main (AOV) image is broken. Shuffling in the alpha from the DCM exr seems to work.
 Top left, the (correct) DCM alpha. Top right, the broken main AOV alpha. Bottom, how to fix in nuke.
 ![fuckedAlpha](./images/solaris/DCMfix_01.png "DCMfix")
