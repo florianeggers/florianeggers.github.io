@@ -104,7 +104,7 @@ Has two components, a weight-capture wrangle and a skin-deform wrangle. Needs ``
 
 ![Setup](./images/vex/vex_skinning_01.png "Setup")
 
-Wrangles:
+Point wrangles:
 ```
 // SKIN CAPTURE
 
@@ -114,7 +114,7 @@ float maxdist = chf("maxdist");
 float weights[], nweights[];
 float sum;
 
-i[]@bones = nearpoints(1, @P, 1, maxbones);
+i[]@bones = nearpoints(1, @P, maxdist, maxbones);
 
 for(int i = 0; i < len(@bones); i++){
     vector bP = point(1, "P", @bones[i]);
@@ -155,10 +155,11 @@ for(int i = 0; i < len(bones); i++){
 
     restN = point(1, "N", bone);
     deformN = point(2, "N", bone);
-    restP = point(1, "P", bone);
 
     restUp = point(1, "up", bone);
     deformUp = point(2, "up", bone);
+
+    restP = point(1, "P", bone);
     deformP = point(2, "P", bone);
 
     matrix deformM = maketransform(deformN, deformUp, deformP);
@@ -177,7 +178,7 @@ for(int i = 0; i < len(bones); i++){
 ## Removing NaNs
 Remove NAN primitives by looping over every point and checking the```@P``` attribute for a NAN value.
 ```
-  //PrimitiveWrangle
+  //Primitive Wrangle
   int cull_prim = 0;
   int pt;
   vector pos;

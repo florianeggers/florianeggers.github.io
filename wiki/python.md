@@ -95,3 +95,6 @@ myFlipbookSettings = mySceneViewer.flipbookSettings().stash()             # make
 myFlipbookSettings.frameRange((1001, 1200))                               # change flipbook settings
 mySceneViewer.flipbook(mySceneViewer.curViewport(), myFlipbookSettings)   # run flipbook
 ```
+
+## ToolUtils
+$HFS/python3.7libs/toolutils.py

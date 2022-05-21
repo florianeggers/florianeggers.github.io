@@ -12,6 +12,12 @@ nav_order: 4
 - [Igor Zanic Adaptive FLIP](http://www.igorfx.com/hou_adaptive_flip/)
 - [VEX Cheat Sheet](https://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html)
 
+## Comp
+- [Xavier Martin Blog](http://www.xaviermartinvfx.com/articles/)
+- [Thought VFX Blog](http://thoughtvfx.blogspot.com/)
+- [Mads Hagbarth Blog](https://hagbarth.net/blog/)
+- [Xuan Prada Blog](http://www.xuanprada.com/blog)
+
 ## Lighting, Shading, Lookdev & Rendering
 - [CG Cinematography](https://chrisbrejon.com/cg-cinematography/)
 - [Lee Griggs' Arnold Blog](https://arnold-rendering.com/)
@@ -21,6 +27,7 @@ nav_order: 4
 - [Textures (Texture.ninja)](https://texture.ninja/)
 - [Textures (Textures.com)](https://www.textures.com/)
 - [Materials (ambientCG)](https://ambientcg.com/))
+- [HDRIs and more (Polyheaven)](https://polyhaven.com/hdris/outdoor)
 
 ## Animation
 - [Mocap Library (CMU)](http://mocap.cs.cmu.edu/)
